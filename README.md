@@ -1,1 +1,1 @@
-# SIC_Project
+# Project --> AI Based Story Generator
