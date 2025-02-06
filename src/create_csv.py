@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Define dataset types and file paths
-base_path = "E:/"  # Set your base path
+base_path = "E:/writingPrompts/"  # Set your base path
 datasets = {
     "train": (f"{base_path}train.wp_source", f"{base_path}train.wp_target"),
     "valid": (f"{base_path}valid.wp_source", f"{base_path}valid.wp_target"),
