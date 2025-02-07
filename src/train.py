@@ -57,6 +57,6 @@ for epoch in range(10):
 # Save model
 print("Saving the trained model...")
 os.makedirs(models_dir, exist_ok=True)
-model.save(os.path.join(models_dir, "story_generator_model.h5"))
+model.save(os.path.join(models_dir, "story_generator_model.h5"))       # and save the model as .keras format also
 
 print("✅ Training completed and model saved!")
