@@ -52,3 +52,9 @@ This project is an **AI-powered story generator** trained on the **WritingPrompt
 git clone https://github.com/your-username/story-generator.git
 cd story-generator
 
+## 🛠 Setup & Installation  
+
+### 2️⃣ Install Dependencies  
+```bash
+pip install -r requirements.txt
+
