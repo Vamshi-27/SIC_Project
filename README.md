@@ -24,6 +24,7 @@ This project is an **AI-powered story generator** trained on the **WritingPrompt
 
 ## 📂 File Structure  
 📁 story-generator/
+
 ├── preprocessing.py # Data processing & tokenization
 
 ├── train.py # LSTM model training
