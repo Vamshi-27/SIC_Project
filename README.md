@@ -40,3 +40,15 @@ This project is an **AI-powered story generator** trained on the **WritingPrompt
 ├── README.md # Project documentation
 
 └── models/ # Saved models
+
+
+
+---
+
+## 🛠 Setup & Installation  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/story-generator.git
+cd story-generator
+
