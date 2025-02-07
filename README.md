@@ -79,12 +79,8 @@ Ensure you have all required Python packages installed by referring to `requirem
 - NumPy
 - Streamlit
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For any inquiries, reach out via [GitHub Issues](https://github.com/Vamshi-27/SIC_Project/issues).
-
+## Future Enhancements
+- Improve model accuracy with advanced NLP techniques.
+- Introduce a feedback mechanism to refine generated stories.
+- Deploy as a web application with user authentication.
+- Explore integration with voice input for interactive storytelling.
