@@ -28,4 +28,4 @@ With a **user-friendly web interface** powered by Streamlit, this tool is perfec
 git clone https://github.com/vishwanath090/Storygeneration
 cd storygenerator
 
-### 🔹 Install Dependencies
+🔹 Install Dependencies
