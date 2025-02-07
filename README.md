@@ -1,58 +1,37 @@
-# 📖 AI-Based Story Generator  
+# 📝 AI-Based Story Generator
 
-This project is an **AI-powered story generator** trained on the **WritingPrompts dataset**. It takes a writing prompt as input and generates a creative story using an **LSTM-based neural network**.  
+## 📌 Overview
+The **AI-Based Story Generator** is a web application that generates creative short stories based on user-provided prompts.  
+It leverages a **Sequence-to-Sequence (Seq2Seq) model** trained on the **Writing Prompts dataset** to create engaging narratives.
 
----
+## ✨ Features
+- **AI-Powered Story Generation**
+- **Fine-Tuned Seq2Seq Model**
+- **Web-Based Interface with Streamlit**
+- **Customizable Creativity Settings**
+- **Story Management (Save, Copy, Share)**
+- **Optional GPU Acceleration**
 
-## 🚀 Features  
-✅ **LSTM-based** deep learning model  
-✅ **Pretrained on the WritingPrompts dataset**  
-✅ **Google Colab support (GPU acceleration)**  
-✅ **Evaluation using Accuracy & F1 Score**  
-✅ **Streamlit web app for easy deployment**  
+## 🛠 Installation
 
----
-
-## 🔄 Workflow  
-1️⃣ **Preprocessing** – Tokenizes & pads input data  
-2️⃣ **Training** – Trains an **LSTM-based** model  
-3️⃣ **Evaluation** – Computes **accuracy & F1 score**  
-4️⃣ **Generation** – Generates stories from prompts  
-5️⃣ **Deployment** – Interactive **Streamlit web app**  
-
----
-
-## 📂 File Structure  
-📁 story-generator/
-
-├── preprocessing.py # Data processing & tokenization
-
-├── train.py # LSTM model training
-
-├── evaluate.py # Accuracy & F1 score computation
-
-├── generate.py # Story generation script
-
-├── app.py # Streamlit deployment
-
-├── requirements.txt # Python dependencies
-
-├── README.md # Project documentation
-
-└── models/ # Saved models
-
-
-
----
-
-## 🛠 Setup & Installation  
-
-### 1️⃣ Clone the Repository  
+### Clone the Repository
 ```bash
 git clone https://github.com/your-username/story-generator.git
 cd story-generator
-
-2️⃣ Install Dependencies
+Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
-
+🚀 Usage
+Provide a Writing Prompt
+Generate a Story
+Adjust Creativity Settings
+Save or Share the Story
+📊 Model Evaluation
+Accuracy: Measures token-level correctness
+F1 Score (weighted): Evaluates overall performance
+🌟 Future Improvements
+Enhance model with Transformer models (e.g., GPT, BERT)
+Support for multiple story genres
+Cloud deployment for broader access
