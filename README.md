@@ -27,3 +27,5 @@ With a **user-friendly web interface** powered by Streamlit, this tool is perfec
 ```bash
 git clone https://github.com/vishwanath090/Storygeneration
 cd storygenerator
+
+### 🔹 Install Dependencies
