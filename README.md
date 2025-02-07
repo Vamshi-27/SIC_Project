@@ -10,6 +10,9 @@ The **AI Story Generator** is a deep learning-based project that generates creat
 - **Evaluation:** Assesses the model's performance on test data.
 - **Deployment:** Provides a simple web UI using Streamlit for easy interaction.
 
+## Dataset
+The project uses a dataset of writing prompts stored in `data/writing_prompts.csv`. This dataset consists of a collection of creative prompts that the model learns from to generate new stories. The preprocessing script cleans and tokenizes the text to prepare it for training. You can add more prompts to enhance the model's learning capabilities.
+
 ## File Structure
 ```
 📁 ai-story-generator
