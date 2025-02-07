@@ -1,96 +1,90 @@
-# ✨ AI-Based Story Generator  
+# AI Story Generator
 
-## 📌 Overview  
-The **AI-Based Story Generator** is a web application that generates creative short stories based on user-provided prompts. It uses a **fine-tuned Seq2Seq model** trained on the **Writing Prompts dataset** to produce engaging and contextually relevant narratives.  
+## Overview
+The **AI Story Generator** is a deep learning-based project that generates creative stories based on writing prompts. This project leverages NLP techniques and deep learning models to generate coherent and engaging narratives.
 
-This application is designed for **writers, hobbyists, and AI enthusiasts** to experiment with AI-generated storytelling using an intuitive web interface.  
+## Features
+- **Preprocessing:** Cleans and tokenizes input data from a dataset.
+- **Training:** Uses a neural network model to learn from story prompts.
+- **Generation:** Produces unique and engaging stories based on input prompts.
+- **Evaluation:** Assesses the model's performance on test data.
+- **Deployment:** Provides a simple web UI using Streamlit for easy interaction.
 
----
+## File Structure
+```
+📁 ai-story-generator
+│── 📁 data
+│   ├── writing_prompts.csv  # Dataset of writing prompts
+│── 📁 models
+│   ├── story_generator_model.h5  # Trained model
+│── 📁 src
+│   ├── preprocess.py  # Data preprocessing script
+│   ├── train.py  # Model training script
+│   ├── generate.py  # Text generation script
+│   ├── evaluate.py  # Model evaluation script
+│── 📁 deployment
+│   ├── app.py  # Streamlit deployment script
+│── requirements.txt  # List of dependencies
+│── README.md  # Project documentation
+```
 
-## 🎯 Features  
-✔️ **AI-Powered Story Generation** – Creates unique, engaging stories from user prompts.  
-✔️ **Fine-Tuned Seq2Seq Model** – Improves coherence, creativity, and fluency.  
-✔️ **Web-Based Interface** – Built with Streamlit for easy use.  
-✔️ **Customizable Creativity Settings** – Adjust temperature, top-k, and top-p.  
-✔️ **Story Management** – Save, copy, or share generated stories.  
-✔️ **GPU Acceleration Support** – Optional for faster inference.  
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Vamshi-27/SIC_Project.git
+   cd SIC_Project
+   ```
+2. Create and activate a virtual environment:
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
----
+## Usage
+### 1. Preprocess Data
+Run the preprocessing script to clean and prepare the dataset:
+```sh
+python src/preprocess.py
+```
+### 2. Train the Model
+Train the model using the following command:
+```sh
+python src/train.py
+```
+### 3. Generate Stories
+Generate a new story based on a writing prompt:
+```sh
+python src/generate.py --prompt "Once upon a time..."
+```
+### 4. Evaluate Model
+Evaluate the trained model on test data:
+```sh
+python src/evaluate.py
+```
+### 5. Deploy with Streamlit
+Run the Streamlit web app:
+```sh
+streamlit run deployment/app.py
+```
 
-## 🛠 Setup & Installation  
+## Dependencies
+Ensure you have all required Python packages installed by referring to `requirements.txt`. The project mainly uses:
+- TensorFlow/Keras
+- NLTK
+- Pandas
+- NumPy
+- Streamlit
 
-### 🔹 Clone the Repository  
-```bash
-git clone https://github.com/vishwanath090/Storygeneration
-cd storygenerator
-🔹 Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-📂 Dataset: Writing Prompts
-The Writing Prompts dataset is a large-scale dataset designed for creative writing and storytelling. It contains diverse prompts paired with user-generated responses, making it an excellent resource for training AI models.
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-🔹 Dataset Structure
-train.wp.source – Training set prompts
-train.wp.target – Corresponding training stories
-valid.wp.source – Validation set prompts
-valid.wp.target – Corresponding validation stories
-test.wp.source – Test set prompts
-test.wp.target – Corresponding test stories
-📌 Model Training & Fine-Tuning
-The model is fine-tuned on the Writing Prompts dataset using Hugging Face's Transformers library.
+## License
+This project is licensed under the MIT License.
 
-🔹 Training Steps
-1️⃣ Preprocess the Dataset – Clean and tokenize the data.
-2️⃣ Fine-Tune the Model – Use the command below:
+## Contact
+For any inquiries, reach out via [GitHub Issues](https://github.com/Vamshi-27/SIC_Project/issues).
 
-bash
-Copy
-Edit
-python train.py --model_name seq2seq --epochs 3 --batch_size 8
-3️⃣ Save the Trained Model – The trained model is stored for later inference.
-
-🚀 Running the Web App
-🔹 Start the Application
-bash
-Copy
-Edit
-streamlit run app.py
-🔹 Access the Web Interface
-After running the command, open your browser and navigate to the Streamlit-provided URL.
-
-🔹 Usage
-1️⃣ Enter a Writing Prompt – Provide a creative idea or sentence.
-2️⃣ Click "Generate" – The AI creates a unique story.
-3️⃣ Adjust Creativity Parameters – Modify temperature and top-k settings.
-4️⃣ Save, Copy, or Share – Manage generated stories easily.
-
-📊 Model Evaluation
-🔹 Performance Metrics
-bash
-Copy
-Edit
-📌 Accuracy – Measures token-level correctness  
-📌 F1 Score (weighted) – Evaluates overall performance  
-🔹 Evaluate Model Performance
-bash
-Copy
-Edit
-python evaluate.py
-⚙️ Technologies Used
-✔️ Backend – Python, TensorFlow/PyTorch, Hugging Face Transformers
-✔️ Frontend – Streamlit, HTML, CSS, JavaScript
-✔️ Model Architecture – Seq2Seq for text generation
-✔️ Deployment – Local execution (future cloud-based options)
-
-🌟 Future Enhancements
-bash
-Copy
-Edit
-🚀 Implement Transformer models (GPT, BERT)  
-🚀 Improve dataset preprocessing  
-🚀 Optimize model training for better results  
-🚀 Support multiple story genres for personalized storytelling  
-🚀 Develop a mobile-friendly UI  
-🚀 Deploy as a cloud-based service  
