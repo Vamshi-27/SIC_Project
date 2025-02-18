@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load model and tokenizer
-model = tf.keras.models.load_model("../models/story_generator_model.h5")
+model = tf.keras.models.load_model("models/story_generator_model.h5")
 
 with open("../models/tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
